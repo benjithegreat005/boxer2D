@@ -1,17 +1,35 @@
 #include <iostream>
 #include <string>
-#include </opt/homebrew/include/SDL2/SDL.h>
-#include </opt/homebrew/include/SDL2/SDL_image.h>
-#include </opt/homebrew/include/SDL2/SDL_timer.h>
+#include "./glad/include/glad/glad.h"
+#include "./glfw/include/GLFW/glfw3.h"
 
 
+class Utils {
+    public:
+        static void init() {
+           
+        };
+        static void createWindow(int x, int y) {
+            
+        }
+        static void destroyWindow() {
 
-int main(int argc, char *argv[]) {
-    std::cout << "Verified\n";
-    std::cout << "Package imported: SDL2";
+        };
+};
 
-    return 0;
-}
 
+class Scene {
+    private:
+        int width;
+        int height;
+        int gravity;
+
+    public:
+        Scene(int x, int y, int g) {
+            width = x;
+            height = y;
+            gravity = g;
+        }
+};
 
 
